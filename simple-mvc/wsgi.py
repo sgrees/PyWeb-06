@@ -1,26 +1,35 @@
 """
-Simple MVC Application With Persistence
+Widget Storage: a Simple MVC Application With Persistence
 
-This application accepts POST requests to paths such as:
+Each widget shall be addressed as follows:
+    http://localhost:8080/example/
+    http://localhost:8080/blarg/
+    http://localhost:8080/4/
 
-    /example/
-    /blarg/
-    /4/
+or any other alphanumeric "root" "directory". There
+exists a widget at each possible widget address,
+irrespective of whether or not that widget address
+has yet been visited.
 
-or any other alphanumeric "root" "directory".
+Each widget has a "name". The "names" of the widgets
+in the examples above are "example", "blarg", and "4"
 
-This POST request shall include a form-encoded variable
-named "value". This value shall be treated as a string.
+All widgets contain a "value". By default, that value
+is "5" for every widget. However, it is possible to
+set a widget's value.
 
-On subsequent GET requests to a location, the application
-shall yield a well formatted html page including some text
-declaring the value stored at that location, and a form
-allowing the visitor to change the value of that variable.
+All widget addresses shall accept POST requests and
+GET requests.
 
-When GETing a location which has not yet been POSTed to,
-the application shall display some default value of the
-variable or a notice that the value has not been set,
-and a form for storing a value at that location.
+A POST request shall include a form-encoded variable
+named "value". This value shall be treated as a string,
+and becomes the value of the widget at that address.
+
+A GET request shall yield a well formatted html page
+including some text declaring the value stored in that
+widget, and a form allowing the visitor to change the
+value of that variable.
+
 """
 
 import cgi
