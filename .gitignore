@@ -1,2 +1,6 @@
 *pycache*
 *.pyc
+.DS_Store
+*.egg-info
+*.sqlite
+ljenv/*
