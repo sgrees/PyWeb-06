@@ -1,6 +1,6 @@
 
 class Widget(object):
-   """
+    """
     The Widget class shall present the class method:
 
         get_widget(name)
@@ -13,5 +13,5 @@ class Widget(object):
         set_value(value)
 
     which are self-explanatory.
-   """
-
+    """
+    pass
