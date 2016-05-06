@@ -14,4 +14,25 @@ class Widget(object):
 
     which are self-explanatory.
     """
-    pass
+    name_widget_dict = {}
+
+    def __init__(self, name):
+        self.name = name
+        self.value = '5'
+
+    def get_value(self):
+        return self.value
+
+    def set_value(self, value):
+        self.value = value
+
+    @classmethod
+    def get_widget(cls, name):
+        try:
+            widget = cls.name_widget_dict[name]
+        except KeyError:
+            widget = cls(name)
+            cls.name_widget_dict = widget
+
+        return widget
+
