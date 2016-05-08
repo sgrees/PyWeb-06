@@ -4,7 +4,6 @@ decorator==4.0.9
 ipython==4.2.0
 ipython-genutils==0.1.0
 jinja2==2.8
--e learning-journal==0.0
 mako==1.0.4
 markupsafe==0.23
 PasteDeploy==1.5.2
