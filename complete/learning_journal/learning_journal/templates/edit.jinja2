@@ -1,6 +1,6 @@
 {% extends "templates/layout.jinja2" %}
 {% block body %}
-<form action="{{ request.host_url }}" method="POST">
+<form method="POST">
 {% for field in form %}
   {% if field.errors %}
     <ul>
