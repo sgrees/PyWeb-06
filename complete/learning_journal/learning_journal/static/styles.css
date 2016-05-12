@@ -1,15 +1,22 @@
+/*  COLOR CODES */
+/*  color: #ff0099; */ /*  library pink  */
+/* color: #fc48b4; */ /* light pink */
+/*  color: #98c73d;  */ /*  gay city green  */
+/*  color: #909090;  */  /*  dark grey  */
+/*  END COLOR CODES */
+
 body{
-    color:#111;
+    color:#ff0099;
     padding:0;
     margin:0;
-    background-color: #eee;}
+    background-color: #909090;}
 header{
     margin:0;
     padding:0 0.75em;
     width:100%;
-    background: #222;
-    color: #ccc;
-    border-bottom: 3px solid #fff;}
+    background: #ff0099;
+    color: #909090;
+    border-bottom: 3px solid #98c73d;}
 header:after{
     content:"";
     display:table;
@@ -19,11 +26,11 @@ footer a{
     text-decoration:none}
 header a:hover,
 footer a:hover {
-    color:#fff;
+    color:#98c73d;
 }
 header a:visited,
 footer a:visited {
-    color:#eee;
+    color:#98c73d;
 }
 header aside{
     float:right;
@@ -67,7 +74,7 @@ main aside .control_row input{
     margin-left:16%}
 footer{
     padding: 1em 0.75em;
-    background: #222;
-    color: #ccc;
-    border-top: 3px solid #fff;
-    border-bottom: 3px solid #fff;}
+    background: #ff0099;
+    color: #909090;
+    border-top: 3px solid #98c73d;
+    border-bottom: 3px solid #98c73d;}

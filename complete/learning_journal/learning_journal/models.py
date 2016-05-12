@@ -57,3 +57,15 @@ class Entry(Base):
         if session is None:
             session = DBSession
         return session.query(cls).get(id)
+
+class UserModel(Base):
+    __tablename__ = 'usermodels'
+    id = Column(Integer, primary_key=True)
+    username = Column(Unicode(255),nullable=False,unique=True,index=True)
+    password = Column(Unicode,nullable=False)
+
+    @classmethod
+    def user(cls, username, session=None):
+        if session is None:
+            session = DBSession
+        return session.query(cls).get(username)
